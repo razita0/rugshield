@@ -1,0 +1,52 @@
+# RugShield Configuration
+
+# Blockchain configurations
+chains:
+  base:
+    rpc: "https://mainnet.base.org"
+    enabled: true
+    factory_addresses:
+      - "0x8909Dc15e40173Ff4699343b6eB8132c65e18eC6"  # Uniswap V2
+    router_addresses:
+      - "0x4752ba5DBc23f44D87826276BF6Fd6b1C372aD24"
+  
+  arbitrum:
+    rpc: "https://arb1.arbitrum.io/rpc"
+    enabled: false
+    factory_addresses:
+      - "0xf1D7CC64Fb4452F05c498126312eBE29f30Fbcf9"
+  
+  linea:
+    rpc: "https://rpc.linea.build"
+    enabled: false
+    factory_addresses: []
+
+# Risk scoring thresholds
+scoring:
+  thresholds:
+    low: 20
+    medium: 40
+    high: 60
+    critical: 80
+
+# Alert configurations
+alerts:
+  telegram:
+    enabled: false
+    bot_token: "${TELEGRAM_BOT_TOKEN}"
+    chat_id: "${TELEGRAM_CHAT_ID}"
+  
+  discord:
+    enabled: false
+    webhook_url: "${DISCORD_WEBHOOK_URL}"
+
+# Honeypot detection settings
+honeypot:
+  simulation_amount_eth: 0.01
+  max_gas_limit: 3000000
+  timeout_seconds: 30
+
+# Rate limiting
+rate_limit:
+  requests_per_second: 5
+  scan_cooldown_minutes: 5
