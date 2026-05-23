@@ -1,0 +1,67 @@
+
+[91m[1m
+    ╔══════════════════════════════════════════════════════════════╗
+    ║  🛡️  RUGSHIELD — Rug-Pull Early Warning System              ║
+    ║  Powered by Hermes Agent + Xiaomi MiMo V2.5                 ║
+    ╚══════════════════════════════════════════════════════════════╝
+[0m
+[92m
+┌──────────────────────────────────────────────────────────────┐
+│  📡 MONITORING ACTIVE                                        │
+├──────────────────────────────────────────────────────────────┤
+│  Chain: Base                         Status: ● LIVE           │
+│  Watching: 1 factory contract        Pairs scanned: 847       │
+│  Alerts sent: 12                     Uptime: 2h 34m           │
+│                                                              │
+│  Last scan: 2 seconds ago                                    │
+│  New pairs/hour: ~150                                        │
+└──────────────────────────────────────────────────────────────┘[0m
+
+[91m[1m
+🚨 ═══════════════════════════════════════════════════════════
+   RUGSHIELD ALERT — CRITICAL
+═══════════════════════════════════════════════════════════[0m
+
+  Token: [96m0x1a2b3c4d5e6f7890abcdef1234567890abcdef12[0m
+  Name:  SafeMoonKiller (SKILL)
+  Chain: BASE
+  
+  [91mRisk Score: 87/100 (CRITICAL)[0m
+  
+  [93m⚠️  Red Flags Detected:[0m
+    ❌ Liquidity NOT locked
+    ❌ Honeypot detected — cannot sell
+    ❌ 92% supply in top 3 wallets
+    ❌ Contract NOT verified
+    ⚠️ Deployer wallet is 2 hours old
+    ⚠️ 45% sell tax detected
+  
+  📊 Full Report: https://rugshield.xyz/token/0x1a2b...ef12
+  🔗 Scan with RugShield: python -m src.agent --check 0x1a2b...
+
+[91m═══════════════════════════════════════════════════════════[0m
+
+[96m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📊 SCAN RESULT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+
+  [1mToken:[0m     0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D
+  [1mName:[0m      LuckyMoon (LMOON)
+  [1mChain:[0m     BASE
+  [1mDeployer:[0m  0x9f8e7d6c5b4a3210fedcba9876543210fedcba98
+  
+  [1mRisk Score:[0m [91m[1m72/100 (CRITICAL)[0m
+  
+  [1mRed Flags:[0m
+    [91m❌ Liquidity NOT locked[0m
+    [93m⚠️ Deployer wallet is < 24 hours old[0m
+    [91m❌ Contract NOT verified[0m
+    [93m⚠️ High sell tax: 35%[0m
+    [93m⚠️ Top 10 holders own 87%[0m
+
+  [1mRecommendation:[0m [91m⛔ DO NOT BUY — High rug risk detected[0m
+
+[92m[1m
+✅ RugShield is monitoring 3 chains (Base, Arbitrum, Linea)
+🚀 Ready to protect DeFi traders from rug-pulls
+[0m
